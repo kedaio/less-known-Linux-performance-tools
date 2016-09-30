@@ -1,6 +1,6 @@
 # Summary
 
 * [Introduction](README.MD)
-* Copyright
+* [Copyright](copyright.md)
 * [Sysdig](sysdig.md)
 
