@@ -16,7 +16,7 @@
 
 sysdig的监控能力是通过安装一个内核模块来实现的。这个模块在内核模式下拦截系统调用和其他系统事件并进行记录。
 
-Sysdig对系统本身的影响？
+### **Sysdig对系统本身的影响？**
 
 官方并无具体的数据来说明sysdig运行时对系统的影响究竟有多大，只是说设计时就是让它在生产环境中运行，是快速而稳定的。从邮件列表中的用户反馈来看，我们可以认为它是安全的。
 
@@ -34,17 +34,7 @@ curl -s https://s3.amazonaws.com/download.draios.com/stable/install-sysdig | sud
 
 [http:\/\/www.sysdig.org\/wiki\/how-to-install-sysdig-for-linux\/](http://www.sysdig.org/wiki/how-to-install-sysdig-for-linux/)
 
-
-
 如果依然有问题，可以去官方邮件列表（[https:\/\/groups.google.com\/forum\/\#!forum\/sysdig](https://groups.google.com/forum/#!forum/sysdig)）看看，或者官方github（[https:\/\/github.com\/draios\/sysdig](https://github.com/draios/sysdig)）的问题列表中看一下是否有人遇到类似的问题。
 
-
-
 或许你也可以尝试以容器的方式来运行。官方的安装wiki中有介绍如何使用docker来运行sysdig。
-
-
-
-
-
-
 
