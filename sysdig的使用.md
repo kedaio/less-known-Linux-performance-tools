@@ -28,3 +28,9 @@ Csysdig最方便的地方是它的视图（Views）功能。视图可以让你�
 
 再次按下F2键可以重新进入视图选择界面。
 
+https:\/\/sysdig.com\/blog\/linux-troubleshooting-cheatsheet\/
+
+https:\/\/sysdig.com\/blog\/fascinating-world-linux-system-calls\/
+
+https:\/\/sysdig.com\/blog\/interpreting-sysdig-output\/
+
