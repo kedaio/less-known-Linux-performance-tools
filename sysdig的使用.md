@@ -38,43 +38,47 @@ Csysdig最方便的地方是它的视图（Views）功能。视图可以让你�
 
 **Directories（目录）：**被访问目录列表。
 
-**Errors（错误）：**系统调用错误。默认 按错误发生次数排序。
+**Errors（错误）：**系统调用错误。默认按错误发生次数排序。
 
 **File Opens List（打开文件列表）：**列出每个文件打开操作。包括文件路径，相关进程以及结果。
 
-**Files（文件）：被访问的文件列表。**
+**Files（文件）：**被访问的文件列表。包括I\/O的大小，频率以及错误计数。
 
-**I\/O by Type（I\/O类型）：**
+**I\/O by Type（I\/O类型）：**按类型分的I\/O量总览。类型分为：文件，目录，网络（IPv4和IPv6），管道，UNIX套接字，信号文件描述符，事件文件描述符，inotify文件描述符。这个视图中有一个TIME项，可以显示进程完成某一I\/O操作所需要的时间（包括等待），这对于排查I\/O相关的性能问题很有帮助。
 
-**K8s Controllers（Kubernetes 控制器）：**
+**K8s Controllers（Kubernetes 控制器）：**所有的Kubernetes控制器及其资源使用情况。
 
-**K8s Pods（kubernetes Pods）：**
+**K8s Namespaces（kubernetes命名空间）：**所有的Kubernetes命名空间及其资源使用情况。
 
-**K8s Services（Kubernetes 服务）：**
+**K8s Pods（kubernetes Pods）：**所有的Kubernetes Pods及其资源使用情况。
 
-**New Connections \(新连接）：**
+**K8s Services（Kubernetes 服务）：**所有的Kubernetes服务及其资源使用情况。
 
-**Page Faults（内存页面错误）：**
+**New Connections \(新连接）：**所有的新建网络连接
 
-**Processes（进程）：**
+**Page Faults（内存缺页）：**进程启动以来所有的内存缺页计数。包括Major和Minor。
 
-**Processes CPU（进程CPU）：**
+**Processes（进程）：系统上的进程列表。类似于top\/htop。**
 
-**Processes FD Usage（进程文件描述符使用）：**
+**Processes CPU（进程CPU）：**进程的CPU使用情况。
 
-**Server Ports（服务器端口）：**
+**Processes Errors（进程错误）：**进程的系统错误计数。并按类型分为文件、网络、内存和其它。
 
-**Sockets Queue（套接字队列）：**
+**Processes FD Usage（进程文件描述符使用）：**进程使用（打开）了多少文件文件描述符，以及它最多能使用的数量。
 
-**Spectrograme-file（）：**
+**Server Ports（服务器端口）：列**出所有的服务器端口以及它们的带宽使用情况。
 
-**Spy Syslog（监视系统日志）：**
+**Sockets Queue（套接字队列）：**每个进程的套接字队列（backlog）使用情况。所谓backlog，就是每个进程最多允许多少等待建立的连接。当这个队列或backlog达到最大值后，新的连接请求将被拒绝。
 
-**Spy User（监视用户）：**
+**Spectrograme-file（文件柱状图）：**文件I\/O延迟的柱状图。横轴为延迟的时间，纵轴为计数。
 
-**System Calls（系统调用）：**
+**Spy Syslog（监视系统日志）：**显示写入到系统日志的内容。
 
-**Threads（线程）：**
+**Spy User（监视用户）：显示所有以互动方式运行的命令。**
+
+**System Calls（系统调用）：**系统调用的触发频率以及每次调用完成所花费的时间。
+
+**Threads（线程）：**系统上所有线程列表，以及它所属的进程和资源使用情况。
 
 https:\/\/sysdig.com\/blog\/linux-troubleshooting-cheatsheet\/
 
